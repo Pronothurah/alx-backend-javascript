@@ -8,9 +8,9 @@ export default class Airport {
    * @param {String} code - Code of Airport.
    * @param {String} name - Names of Airport.
    */
-  constructor(code, name) {
-    this.code = code;
+  constructor(name, code) {
     this.name = name;
+    this.code = code;
   }
 
   /**
