@@ -4,6 +4,8 @@
  * @property {number} id - The student's ID.
  * @property {string} firstName - The student's first name.
  * @property {string} location - The student's location.
+ * @author Onsongo Onditi <https://github.com/Pronothurah>
+ * @returns List
  */
 const getListStudents = () => {
     return [

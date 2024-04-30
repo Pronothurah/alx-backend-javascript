@@ -5,6 +5,8 @@
  *   firstName: String,
  *   location: String
  *  }[]} students - The list of students.
+ * @author Onsongo Onditi <https://github.com/Pronothurah>
+ * @returns List
  */
 export default function getListStudentIds(students) {
     if (students instanceof Array) {
