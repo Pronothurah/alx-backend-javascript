@@ -5,7 +5,6 @@
  * @property {string} firstName - The student's first name.
  * @property {string} location - The student's location.
  */
-
 const getListStudents = () => {
     return [
         {
