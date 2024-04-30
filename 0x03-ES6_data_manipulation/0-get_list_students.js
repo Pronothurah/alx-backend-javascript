@@ -1,7 +1,10 @@
 /**
  * Retrieves a list of students.
- * @author Onsongo Onditi <https://github.com/Pronothurah>
- * @returns {{id: Number, firstName: String, location: String}[]}
+ * Retrieves a list of students.
+ * @returns {Object[]} An array of student objects.
+ * @property {number} id - The student's ID.
+ * @property {string} firstName - The student's first name.
+ * @property {string} location - The student's location.
  */
 
 const getListStudents = () => {
