@@ -1,6 +1,5 @@
 /**
  * Retrieves a list of students.
- * Retrieves a list of students.
  * @returns {Object[]} An array of student objects.
  * @property {number} id - The student's ID.
  * @property {string} firstName - The student's first name.
