@@ -22,6 +22,17 @@ export interface Directors extends Teacher {
   numberOfReports: number;
 }
 
+// Test Director
+const director1: Directors = {
+  firstName: 'John',
+  lastName: 'Doe',
+  location: 'London',
+  fullTimeEmployee: true,
+  numberOfReports: 17,
+};
+
+console.log(director1);
+
 export interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
@@ -29,6 +40,9 @@ export interface printTeacherFunction {
 export function printTeacher(firstName: string, lastName: string): string {
   return `${firstName[0]}. ${lastName}`;
 }
+
+// Test printTeacher function
+console.log(printTeacher("John", "Doe"));
 
 export interface IStudentClassConstructor {
   new (firstName: string, lastName: string): IStudentClass;
@@ -60,3 +74,8 @@ export class StudentClass implements IStudentClass {
 export function createStudent(ctor: IStudentClassConstructor, firstName: string, lastName: string): IStudentClass {
   return new ctor(firstName, lastName);
 }
+
+// Test Student class
+const student = new StudentClass("John", "Doe");
+console.log(student.workOnHomework()); // Output: Currently working
+console.log(student.displayName());    // Output: John
