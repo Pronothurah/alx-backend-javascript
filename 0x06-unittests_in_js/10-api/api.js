@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 const port = 7865;
+
+// Middleware to parse JSON bodies
+app.use(bodyParser.json());
 
 // Home endpoint
 app.get('/', (req, res) => {
@@ -21,12 +25,7 @@ app.get('/available_payments', (_req, res) => {
 
 // Login endpoint
 app.post('/login', (req, res) => {
-  let username = '';
-
-  if (req.body) {
-    username = req.body.userName;
-  }
-
+  const username = req.body.userName || 'Unknown'; // Handle missing userName
   res.send(`Welcome ${username}`);
 });
 
